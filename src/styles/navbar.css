@@ -1,0 +1,59 @@
+/* Navbar-section-start  */
+.container {
+  background-color: var(--body_background);
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 11.5rem 0 7.813rem;
+}
+.navbar-container span {
+  font-family: "Inter";
+  font-style: normal;
+  background-color: var(--body_nav_span_bg);
+  color: var(--body_nav_span);
+  font-weight: 600;
+  font-size: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  line-height: 1.5rem;
+  transform: rotate(30deg);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.125rem;
+}
+.navbar h4 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #6b7280;
+  cursor: pointer;
+}
+.contact h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--body_nav_h4_color);
+  background-color: var(--body_nav_h4_bg);
+  font-weight: 500;
+  font-size: 1.125rem;
+  height: 3.25rem;
+  width: 8.188rem;
+  cursor: pointer;
+  border: 1px solid #3730a3;
+  border-radius: 10px;
+  padding: 0 1rem 0 1rem;
+}
+.contact h4:hover {
+  border-radius: 10px;
+  background-color: var(--body_nav_h4_color);
+  color: var(--body_nav_h4_bg);
+}
+
+/* Navbar-section-end  */

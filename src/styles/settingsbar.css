@@ -1,0 +1,39 @@
+/* Settings-section-start */
+
+.settingsBar {
+  padding: 2rem 10.938rem 0 0;
+  background-color: var(--body_background);
+}
+.settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+}
+.mode-text {
+  width: 103px;
+  height: 18px;
+  font-size: 15px;
+  color: var(--body_settings_text);
+  font-weight: bold;
+}
+.divider-text {
+  width: 6px;
+  height: 18px;
+  font-size: 15px;
+  font-weight: bold;
+  border-left: 2px solid var(--body_settings_text);
+}
+.language-text {
+  color: var(--body_settings_text);
+  width: 138px;
+  height: 18px;
+  font-weight: bold;
+  font-size: 15px;
+}
+#lang {
+  color: var(--body_settings_span);
+}
+
+/* Settings-section-end */
