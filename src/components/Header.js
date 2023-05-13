@@ -10,7 +10,7 @@ export default function Header() {
       <div className="header">
         <div className="info-statement">
           <div className="name-line"></div>
-          <h3>Yiğitcan Hoşak</h3>
+          <h3>Deneme</h3>
         </div>
         <div className="bio-statement">
           <h1>
