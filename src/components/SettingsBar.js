@@ -14,6 +14,7 @@ export default function SettingsBar() {
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
   };
+
   return (
     <div className="settingsBar">
       <div className="settings">

@@ -1,0 +1,33 @@
+/* Skills-section-start */
+.skills {
+  padding: 7.5rem 10.938rem 0 7.813rem;
+
+  background-color: var(--body_background);
+}
+.skills h2 {
+  color: var(--body_skill_h2);
+  font-size: 3rem;
+  margin: 0;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7.5rem;
+}
+.skill-list > div {
+  width: calc((100% - 2 * 7.5rem) / 3);
+}
+
+.skill-list h3 {
+  color: var(--body_skill_h3);
+  font-size: 30px;
+}
+.skill-list p {
+  color: var(--body_skill_p);
+}
+.skill-bottomline {
+  border: 1px solid #bab2e7;
+  margin-top: 2.625rem;
+}
+
+/* Skills-section-end */

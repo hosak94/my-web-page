@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { skillsData } from "../data/skills-data";
+import "../styles/skills.css";
 
 export default function Skills() {
   return (

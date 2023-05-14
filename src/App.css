@@ -21,8 +21,17 @@
   --body_header_h4_color: white;
   --body_header_icon: #3730a3;
   --body_header_icon_bg: white;
-
   /* Header-color-end */
+
+  /* Skills-color-start */
+  --body_skill_h2: #1f2937;
+  --body_skill_h3: #4338ca;
+  --body_skill_p: #6b7280;
+  /* Skills-color-end */
+
+  /* Profile-color-start */
+  --body_profile_p: #6b7280;
+  /* Profile-color-end */
 }
 [data-theme="dark"] {
   --body_background: #252128;
@@ -49,97 +58,29 @@
   --body_header_icon_bg: #383838;
 
   /* Header-dark-end */
+
+  /* Skills-color-start */
+  --body_skill_h2: #aebccf;
+  --body_skill_h3: #b7aaff;
+  --body_skill_p: white;
+
+  /* Skills-color-end */
+
+  /* Profile-color-start */
+  --body_profile_p: white;
+  /* Profile-color-end */
 }
 
 body {
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 * {
   transition: all 0.3s ease-in-out;
 }
-
-/* Skills-section-start */
-.skills {
-  margin-top: 7.5rem;
-  margin-left: 7.813rem;
-  margin-right: 10.938rem;
-}
-.skills h2 {
-  color: #1f2937;
-  font-size: 3rem;
-  margin: 0;
-}
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7.5rem;
-}
-.skill-list > div {
-  width: calc((100% - 2 * 7.5rem) / 3);
-}
-
-.skill-list h3 {
-  color: #4338ca;
-  font-size: 30px;
-}
-.skill-list p {
-  color: #6b7280;
-}
-.skill-bottomline {
-  border: 1px solid #bab2e7;
-  margin-top: 2.625rem;
-}
-
-/* Skills-section-end */
-
-/* Profile-section-start */
-.profile-container {
-  margin: 2.438rem 10.938rem 0 7.813rem;
-}
-.profile h2 {
-  color: #1f2937;
-  font-size: 48px;
-}
-.profile-style {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
-.my-info h3 {
-  color: #4338ca;
-  font-size: 30px;
-  margin-top: 2.438rem;
-}
-
-.info-container {
-  display: flex;
-  flex-direction: row;
-}
-.info-question {
-  display: flex;
-  flex-direction: column;
-  width: 10rem;
-  font-weight: bold;
-}
-.info-answer {
-  display: flex;
-  flex-direction: column;
-  width: 14.5rem;
-}
-.about-me h3 {
-  color: #4338ca;
-  font-size: 30px;
-  margin-top: 2.438rem;
-}
-.about-me p {
-  color: #6b7280;
-  width: 588.41px;
-  height: 143px;
-}
-
-/* Profile-section-end */
 
 /* Project-section-start */
 .projects-container {
