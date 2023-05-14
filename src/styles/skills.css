@@ -1,3 +1,13 @@
+:root {
+  --body_skill_h2: #1f2937;
+  --body_skill_h3: #4338ca;
+  --body_skill_p: #6b7280;
+}
+[data-theme="dark"] {
+  --body_skill_h2: #aebccf;
+  --body_skill_h3: #b7aaff;
+  --body_skill_p: white;
+}
 /* Skills-section-start */
 .skills {
   padding: 7.5rem 10.938rem 0 7.813rem;

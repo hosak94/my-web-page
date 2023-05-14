@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { projectData } from "../data/projects.data";
+import "../styles/projects.css";
 
 export default function Projects() {
   return (

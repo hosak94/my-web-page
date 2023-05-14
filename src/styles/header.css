@@ -1,5 +1,20 @@
+:root {
+  --body_header_h3: #4338ca;
+  --body_header_h1: #1f2937;
+  --body_header_h4bg: #3730a3;
+  --body_header_h4_color: white;
+  --body_header_icon: #3730a3;
+  --body_header_icon_bg: white;
+}
+[data-theme="dark"] {
+  --body_header_h3: #b7aaff;
+  --body_header_h1: #aebccf;
+  --body_header_h4bg: #e1e1ff;
+  --body_header_h4_color: #252128;
+  --body_header_icon: #bab2e7;
+  --body_header_icon_bg: #383838;
+}
 /* Header-section-start */
-
 .header-container {
   padding: 0 11.5rem 0 7.813rem;
   display: flex;

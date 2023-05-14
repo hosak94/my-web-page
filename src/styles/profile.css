@@ -1,10 +1,22 @@
+:root {
+  --body_profile_h2: #1f2937;
+  --body_profile_h3: #4338ca;
+  --body_profile_p: #6b7280;
+  --body_profile_info: black;
+}
+[data-theme="dark"] {
+  --body_profile_h2: #aebccf;
+  --body_profile_h3: #b7aaff;
+  --body_profile_p: white;
+  --body_profile_info: white;
+}
 /* Profile-section-start */
 .profile-container {
   padding: 2.438rem 10.938rem 0 7.813rem;
   background-color: var(--body_background);
 }
 .profile h2 {
-  color: var(--body_skill_h2);
+  color: var(--body_profile_h2);
   font-size: 48px;
 }
 .profile-style {
@@ -14,7 +26,7 @@
 }
 
 .my-info h3 {
-  color: var(--body_skill_h3);
+  color: var(--body_profile_h3);
   font-size: 30px;
   margin-top: 2.438rem;
 }
@@ -28,16 +40,16 @@
   flex-direction: column;
   width: 10rem;
   font-weight: bold;
-  color: var(--black_white);
+  color: var(--body_profile_info);
 }
 .info-answer {
   display: flex;
   flex-direction: column;
   width: 14.5rem;
-  color: var(--black_white);
+  color: var(--body_profile_info);
 }
 .about-me h3 {
-  color: var(--body_skill_h3);
+  color: var(--body_profile_h3);
   font-size: 30px;
   margin-top: 2.438rem;
 }

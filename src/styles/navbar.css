@@ -1,3 +1,16 @@
+:root {
+  --body_nav_span: #7b61ff;
+  --body_nav_span_bg: #eeebff;
+  --body_nav_h4_bg: white;
+  --body_nav_h4_color: #3730a3;
+}
+[data-theme="dark"] {
+  --body_nav_span: #8f88ff;
+  --body_nav_span_bg: #4731d3;
+  --body_nav_h4_bg: #3730a3;
+  --body_nav_h4_color: white;
+}
+
 /* Navbar-section-start  */
 .container {
   background-color: var(--body_background);
