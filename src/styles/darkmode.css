@@ -1,58 +1,78 @@
-.dark_mode {
-  margin-top: -20px;
-  margin-left: 10px;
+:root {
+  --body_settings_mode: #4731d3;
+}
+[data-theme="dark"] {
+  --body_settings_mode: #3a3a3a;
+}
+/* new mode */
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  transition: all 0.6s;
+  z-index: -1;
 }
 
-.dark_mode_label {
+.switch {
+  position: relative;
+  display: inline-block;
   width: 55px;
   height: 24px;
-  position: relative;
-  display: block;
-  background: var(--body_settings_mode);
-  border-radius: 200px;
+  border-radius: 50px;
+  overflow: hidden;
+}
 
+input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  background-color: var(--body_settings_mode);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  transition: all 0.4s;
   cursor: pointer;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  background-color: #ffe86e;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 36px;
+  bottom: 4px;
+
   transition: 0.3s;
 }
-.dark_mode_label:after {
+
+.slider::after {
+  position: absolute;
   content: "";
   width: 16px;
   height: 16px;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  background: linear-gradient(180deg, #ffcc89, #d8860b);
-  border-radius: 180px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--body_settings_mode);
+  border-radius: 50%;
+  left: 55px;
+  bottom: 6.5px;
   transition: 0.3s;
 }
-.dark_mode_input {
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-.dark_mode_input:checked + .dark_mode_label {
-  background: var(--body_settings_mode);
-}
-.dark_mode_input:checked + .dark_mode_label:after {
-  left: 62px;
-  transform: translateX(-173%);
-  background: #ffe86e;
-}
-.dark_mode_label:active:after {
-  width: 20px;
+
+input:checked + .slider::before {
+  transform: translateX(-32px);
 }
 
-.dark_mode_label_hilal:after {
-  content: "";
-  width: 15px;
-  height: 16px;
-  position: absolute;
-  top: 33px;
-  left: 1049px;
-  background: var(--body_settings_mode);
-
-  border-radius: 180px;
-  transition: 0.3s;
-  transform: rotate(55deg);
+input:checked + .slider::after {
+  transform: translateX(-47px);
 }

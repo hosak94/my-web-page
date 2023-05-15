@@ -1,12 +1,10 @@
 :root {
   --body_settings_span: #4731d3;
   --body_settings_text: #777777;
-  --body_settings_mode: #4731d3;
 }
 [data-theme="dark"] {
   --body_settings_span: #bab2e7;
   --body_settings_text: #d9d9d9;
-  --body_settings_mode: #3a3a3a;
 }
 /* Settings-section-start */
 
