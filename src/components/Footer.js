@@ -1,6 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { FaHandPointRight } from "react-icons/fa";
+import "../styles/footer.css";
 
 export default function Footer() {
   return (

@@ -4,6 +4,7 @@
   --body_projects_p: #6b7280;
   --body_projects_span: #3730a3;
   --body_projects_span_bg: white;
+  --body_projects_link: #3730a3;
 }
 [data-theme="dark"] {
   --body_projects_h2: #aebccf;
@@ -11,6 +12,7 @@
   --body_projects_p: white;
   --body_projects_span: #8f88ff;
   --body_projects_span_bg: #383838;
+  --body_projects_link: #e1e1ff;
 }
 
 /* Project-section-start */
@@ -64,15 +66,16 @@
   padding: 0.3rem;
   background-color: var(--body_projects_span_bg);
 }
-.project-features span:hover {
-  background-color: #3730a3;
-  color: white;
-}
+
 .project-link {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1rem;
+  margin-bottom: 8.125rem;
+}
+.project-link a {
+  color: var(--body_projects_link);
 }
 
 /* Project-section-end */
