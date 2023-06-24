@@ -51,10 +51,7 @@ export default function Header() {
         </div>
       </div>
       <div className="avatar">
-        <img
-          src="https://s3-alpha-sig.figma.com/img/76b0/6993/b04fd1fa29a883e2f4b8b8577a5c82eb?Expires=1684713600&Signature=n~CsTL~WOVGu8B8m~mdDFzYTXmLrn5ku1Kd0q0NREn61-cV837~u0q-eMot64BzrifVN-TlZnTK-kKZhVaf6hUDR4WOLemmL~TVgWzgY-cdQGrMONgzgHjytZwwA9NxDli~5NedWYW4~ei4asYN1GVqDJfOb4OcUUA6uVrG4Ra~udLfTYPCU5X25KJbjJ0ctC-p-HuZMULjCbBWn7wwayW-4giiHldzhsAzoHVaMjGQeTfjbt-DOfs1HHdsG7q4nxfDkYjbhIgSlNbnL5ikTC5naIhOPY3obxYDJUoSkh3IF0nO3JAy2xu1bsjcOHcLdYR4MGv-dr3WWthFl3rxLiw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-          alt=""
-        />
+        <img src="/project-photo/Profile.jpg" alt="" />
       </div>
     </div>
   );

@@ -1,9 +1,9 @@
 :root {
-  --body_settings_span: #4731d3;
+  --body_settings_language: #4731d3;
   --body_settings_text: #777777;
 }
 [data-theme="dark"] {
-  --body_settings_span: #bab2e7;
+  --body_settings_language: #bab2e7;
   --body_settings_text: #d9d9d9;
 }
 /* Settings-section-start */
@@ -34,14 +34,12 @@
   border-left: 2px solid var(--body_settings_text);
 }
 .language-text {
-  color: var(--body_settings_text);
+  justify-content: space-between;
+  color: var(--body_settings_language);
   width: 138px;
   height: 18px;
   font-weight: bold;
   font-size: 15px;
-}
-#lang {
-  color: var(--body_settings_span);
 }
 
 /* Settings-section-end */
