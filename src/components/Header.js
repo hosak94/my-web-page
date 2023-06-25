@@ -3,8 +3,10 @@ import "../styles/header.css";
 import { Link } from "react-scroll";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  const { t } = useTranslation();
   return (
     <div className="header-container">
       <div className="header">
@@ -12,17 +14,11 @@ export default function Header() {
           <div className="name-line"></div>
           <h3>Yiğitcan Hoşak</h3>
         </div>
-        <div className="bio-statement">
-          <h1>
-            I am a Full-Stack <br /> Developer...
-          </h1>
+        <div className="catchword">
+          <h2>{t("catchword")}</h2>
         </div>
         <div className="info">
-          <p>
-            Hi, I’m Yiğitcan. If you are looking for a Developer who to craft
-            solid and scalable frontend products with great user experiences.
-            Let’s shake hands with me.
-          </p>
+          <p>{t("information")}</p>
         </div>
         <div className="icons">
           <Link
@@ -31,7 +27,7 @@ export default function Header() {
             duration={1000}
             className="contact-link"
           >
-            <h4>Hire me</h4>
+            <h4>{t("hire_me")}</h4>
           </Link>
           <div className="social-icon">
             <a href="https://github.com/hosak94" className="social-icon">
