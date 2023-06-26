@@ -2,20 +2,23 @@ import React from "react";
 import { Element } from "react-scroll";
 import { projectData } from "../data/projects.data";
 import "../styles/projects.css";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <Element name="projectsScroll" className="projects-container">
-      <h2>Projects</h2>
+      <h2>{t("projects")}</h2>
       <div className="projects">
         {projectData.map((project) => (
           <div className="projects-info" key={project.projectName}>
             <img
               src={`${process.env.PUBLIC_URL}/project-photo/${project.projectImg}`}
-              alt={project.projectName}
+              alt={t(project.projectName)}
             />
-            <h4>{project.projectName}</h4>
-            <p>{project.projectDescription}</p>
+            <h4>{t(project.projectName)}</h4>
+            <p>{t(project.projectDescription)}</p>
             <div className="project-features">
               {project.projectSkill.map((skill) => (
                 <span key={skill}>{skill}</span>

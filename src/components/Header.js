@@ -41,7 +41,7 @@ export default function Header() {
               className="social-icon"
             >
               <FaLinkedinIn className="linedlnicon" />
-              Linedln
+              LinkedIn
             </a>
           </div>
         </div>

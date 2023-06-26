@@ -2,15 +2,14 @@ import React from "react";
 import { Element } from "react-scroll";
 import { FaHandPointRight } from "react-icons/fa";
 import "../styles/footer.css";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <Element name="contactScroll" className="footer-container">
       <div className="footer">
-        <p>
-          Let's work together on <br />
-          your next product.
-        </p>
+        <p>{t("slogan")}</p>
       </div>
       <div className="footer-link">
         <div className="mail">
@@ -18,7 +17,7 @@ export default function Footer() {
           yigitcanhosak@gmail.com
         </div>
         <div className="my-link">
-          <p className="blog">Personal Blog</p>
+          {/* <p className="blog">Personal Blog</p> */}
           <a href="https://github.com/hosak94" className="footer-github">
             Github
           </a>
@@ -26,7 +25,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/yiğitcan-hoşak-3741a718a"
             className="footer-linkedln"
           >
-            Linkedln
+            LinkedIn
           </a>
         </div>
       </div>
