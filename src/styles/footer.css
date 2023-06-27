@@ -11,72 +11,156 @@
   --body_footer_mail: #bab2e7;
   --body_footer_blog: #e1e1ff;
 }
-/* Footer-section-start */
-.footer-container {
-  background-color: var(--body_footer_bg);
-  padding-top: 5rem;
-  height: 25.563rem;
-  width: auto;
+@media (min-width: 319px) and (max-width: 480px) {
+  body {
+    background-color: lightsalmon;
+  }
 }
-.footer p {
-  width: 540px;
-  height: 106px;
-  font-size: 42px;
-  font-weight: 600;
-  color: var(--body_footer_p);
-  margin-left: 7.813rem;
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  body {
+    background-color: powderblue;
+  }
 }
-.footer-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .footer-container {
+    background-color: var(--body_footer_bg);
+    padding-top: 5rem;
+    height: 25.563rem;
+    width: auto;
+  }
+  .footer p {
+    width: 540px;
+    height: 106px;
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--body_footer_p);
+    margin-left: 7.813rem;
+  }
+  .footer-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 7.813rem;
+    text-decoration: underline;
+    color: var(--body_footer_mail);
+  }
+  .my-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10.938rem;
+    font-weight: 500;
+  }
+  .blog {
+    width: 120px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--body_footer_blog);
+  }
+  .right-hand {
+    color: gold;
+    font-size: 20px;
+    width: 26px;
+    height: 24px;
+  }
+  .footer-github {
+    width: 60px;
+    height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #00ab6b;
+    text-decoration: none;
+  }
+  .footer-linkedln {
+    width: 74px;
+    height: 27px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #0077b5;
+  }
 }
-.mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-left: 7.813rem;
-  text-decoration: underline;
-  color: var(--body_footer_mail);
+
+@media (min-width: 1601px) {
+  .footer-container {
+    background-color: var(--body_footer_bg);
+    padding-top: 5rem;
+    height: 25.563rem;
+    width: auto;
+  }
+  .footer p {
+    width: 540px;
+    height: 106px;
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--body_footer_p);
+    margin-left: 7.813rem;
+  }
+  .footer-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 7.813rem;
+    text-decoration: underline;
+    color: var(--body_footer_mail);
+  }
+  .my-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10.938rem;
+    font-weight: 500;
+  }
+  .blog {
+    width: 120px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--body_footer_blog);
+  }
+  .right-hand {
+    color: gold;
+    font-size: 20px;
+    width: 26px;
+    height: 24px;
+  }
+  .footer-github {
+    width: 60px;
+    height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #00ab6b;
+    text-decoration: none;
+  }
+  .footer-linkedln {
+    width: 74px;
+    height: 27px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #0077b5;
+  }
 }
-.my-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-right: 10.938rem;
-  font-weight: 500;
-}
-.blog {
-  width: 120px;
-  height: 27px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: var(--body_footer_blog);
-}
-.right-hand {
-  color: gold;
-  font-size: 20px;
-  width: 26px;
-  height: 24px;
-}
-.footer-github {
-  width: 60px;
-  height: 27px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  color: #00ab6b;
-  text-decoration: none;
-}
-.footer-linkedln {
-  width: 74px;
-  height: 27px;
-  line-height: 27px;
-  font-weight: 500;
-  color: #0077b5;
-}
+
 /* Footer-section-end */
