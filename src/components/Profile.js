@@ -16,19 +16,25 @@ export default function Profile() {
               <div className="info-question">
                 <p>{t("date_of_birth")}</p>
                 <p>{t("city_of_residence")}</p>
-                <p>
-                  {t("education")}
-                  <br /> <br /> <br />
-                </p>
+                <div>
+                  <p>{t("education")}</p>
+                  <p>
+                    <br />
+                  </p>
+                  <p>
+                    <br />
+                  </p>
+                </div>
                 <p>{t("preferred_job_role")}</p>
               </div>
               <div className="info-answer">
                 <p>16.02.1994</p>
                 <p>İzmir</p>
-                <p>
-                  İstanbul Üniversitesi <br /> Maden Mühendisliği <br />{" "}
-                  Lisans,2019
-                </p>
+                <div>
+                  <p>İstanbul Üniversitesi</p>
+                  <p>Maden Mühendisliği</p>
+                  <p>Lisans,2019</p>
+                </div>
                 <p>Full Stack Developer</p>
               </div>
             </div>

@@ -10,6 +10,34 @@
 }
 
 @media (min-width: 319px) and (max-width: 480px) {
+  .skills {
+    background-color: var(--body_background);
+    padding-top: 20px;
+  }
+  .skills h2 {
+    color: var(--body_skill_h2);
+    font-size: 3rem;
+    text-align: center;
+  }
+  .skill-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .skill-list h3 {
+    color: var(--body_skill_h3);
+    font-size: 30px;
+  }
+  .skill-list p {
+    display: none;
+    color: var(--body_skill_p);
+  }
+  .skill-bottomline {
+    border: 1px solid #bab2e7;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1200px) {
