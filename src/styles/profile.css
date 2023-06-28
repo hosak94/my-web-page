@@ -52,6 +52,13 @@
     flex-direction: column;
     color: var(--body_profile_info);
   }
+  .about-me {
+    padding-bottom: 40px;
+  }
+  .about-me-scroll {
+    overflow-x: scroll;
+    height: 250px;
+  }
   .about-me h3 {
     color: var(--body_profile_h3);
     font-size: 30px;

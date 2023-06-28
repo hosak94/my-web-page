@@ -11,32 +11,30 @@ export default function Projects() {
   const { t } = useTranslation();
 
   const handlePreviousProject = () => {
-    setCurrentProjectIndex((prevIndex) => prevIndex - 1);
+    setCurrentProjectIndex((prevIndex) =>
+      prevIndex === 0 ? projectData.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNextProject = () => {
-    setCurrentProjectIndex((prevIndex) => prevIndex + 1);
+    setCurrentProjectIndex((prevIndex) => (prevIndex + 1) % projectData.length);
   };
 
-  const displayedProjects = projectData.slice(
-    currentProjectIndex,
-    currentProjectIndex + 3
-  );
-
-  const showPreviousButton = currentProjectIndex !== 0;
-  const showNextButton = currentProjectIndex + 3 < projectData.length;
+  const displayedProjects = [
+    projectData[currentProjectIndex],
+    projectData[(currentProjectIndex + 1) % projectData.length],
+    projectData[(currentProjectIndex + 2) % projectData.length],
+  ];
 
   return (
     <Element name="projectsScroll" className="projects-container">
       <h2>{t("projects")}</h2>
       <div className="project-border">
-        {showPreviousButton && (
-          <div>
-            <button className="previous-button" onClick={handlePreviousProject}>
-              <FaArrowLeft />
-            </button>
-          </div>
-        )}
+        <div>
+          <button className="previous-button" onClick={handlePreviousProject}>
+            <FaArrowLeft />
+          </button>
+        </div>
 
         <div className="projects">
           {displayedProjects.map((project) => (
@@ -45,8 +43,10 @@ export default function Projects() {
                 src={`${process.env.PUBLIC_URL}/project-photo/${project.projectImg}`}
                 alt={t(project.projectName)}
               />
-              <h4>{t(project.projectName)}</h4>
-              <p>{t(project.projectDescription)}</p>
+              <div className="project-description">
+                <h4>{t(project.projectName)}</h4>
+                <p>{t(project.projectDescription)}</p>
+              </div>
               <div className="project-features">
                 {project.projectSkill.map((skill) => (
                   <span key={skill}>{skill}</span>
@@ -59,13 +59,12 @@ export default function Projects() {
             </div>
           ))}
         </div>
-        {showNextButton && (
-          <div>
-            <button className="next-button" onClick={handleNextProject}>
-              <FaArrowRight />
-            </button>
-          </div>
-        )}
+
+        <div>
+          <button className="next-button" onClick={handleNextProject}>
+            <FaArrowRight />
+          </button>
+        </div>
       </div>
     </Element>
   );

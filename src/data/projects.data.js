@@ -24,7 +24,7 @@ export const projectData = [
     gitHub: "https://github.com/hosak94/fsweb-s10g2-redux-filmler",
   },
   {
-    projectName: "Movie List",
+    projectName: "Favorite Movie List",
     projectImg: "MovieList.png",
     projectDescription:
       "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
