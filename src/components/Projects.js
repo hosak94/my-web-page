@@ -73,7 +73,7 @@ export default function Projects() {
                   Github
                 </span>
                 <span onClick={() => handleOnClick(project.projectUrl)}>
-                  Web Site
+                  View Site
                 </span>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function Projects() {
                   Github
                 </span>
                 <span onClick={() => handleOnClick(project.projectUrl)}>
-                  Web Site
+                  View Site
                 </span>
               </div>
             </div>

@@ -109,6 +109,110 @@
 }
 
 @media (min-width: 481px) and (max-width: 1200px) {
+  .header-container {
+    padding: 0 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: var(--body_background);
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .info-statement {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  .info-statement h3 {
+    color: var(--body_header_h3);
+    font-size: 16px;
+  }
+  .name-line {
+    border-bottom: 1px solid var(--body_header_h3);
+    width: 75px;
+    margin-bottom: 25px;
+  }
+
+  .catchword h2 {
+    width: 300px;
+    color: var(--body_header_h1);
+    margin: 0;
+    font-size: 32px;
+  }
+  .info {
+    width: 350px;
+    text-indent: 25px;
+    text-align: justify;
+    color: var(--body_header_info_p);
+  }
+
+  .avatar img {
+    width: 250px;
+    height: 170px;
+    border-radius: 18px;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+      0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    margin-top: 32px;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.75rem;
+    transition: none;
+  }
+
+  .contact-link h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--body_header_h4_color);
+    background-color: var(--body_header_h4bg);
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #3730a3;
+    border-radius: 6px;
+    transition: none;
+  }
+
+  .contact-link h4:hover {
+    border-radius: 6px;
+    background-color: var(--body_header_icon_bg);
+    color: var(--body_header_icon);
+    transition: none;
+  }
+
+  .social-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--body_header_icon);
+    background-color: var(--body_header_icon_bg);
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(---body_header_icon);
+    border-radius: 6px;
+    gap: 0.625rem;
+    transition: none;
+    text-decoration: none;
+  }
+  .social-icon a:hover,
+  .social-icon a:hover svg {
+    border-radius: 6px;
+    background-color: var(--body_header_h4bg);
+    color: var(--body_header_h4_color);
+    fill: var(--body_header_h4_color);
+    transition: none;
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
