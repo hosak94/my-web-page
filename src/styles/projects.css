@@ -34,72 +34,7 @@
     align-items: center;
   }
   .projects {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    height: 600px;
-  }
-  .projects-info {
-    border: 2px solid #bab2e7;
-    padding: 10px;
-    border-radius: 20px;
-  }
-
-  .projects-info img {
-    width: 150px;
-    height: 100px;
-    border: 1px solid #bab2e7;
-  }
-  .projects-info h4 {
-    font-size: 30px;
-    color: var(--body_projects_h4);
-  }
-  .projects-info p {
-    color: var(--body_projects_p);
-    white-space: wrap;
-    height: 120px;
-    overflow-y: scroll;
-  }
-  .project-features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 6px;
-    grid-auto-flow: dense;
-    width: 230px;
-  }
-  .project-features span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--body_projects_span);
-    border: 1px solid var(--body_projects_span);
-    border-radius: 4px;
-    white-space: nowrap;
-    padding: 0.3rem;
-    background-color: var(--body_projects_span_bg);
-  }
-
-  .project-link {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-  }
-  .project-link a {
-    color: var(--body_projects_link);
-  }
-  .previous-button,
-  .next-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .previous-button svg,
-  .next-button svg {
-    width: 30px;
-    height: 30px;
-    fill: var(--body_projects_button);
+    display: none;
   }
 }
 
@@ -152,6 +87,7 @@
     height: 180px;
     border-radius: 20px;
     border: 1px solid #bab2e7;
+    cursor: pointer;
   }
   .projects-info h4 {
     margin: 0;
@@ -187,8 +123,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .project-link a {
+  .project-link span {
     color: var(--body_projects_link);
+    text-decoration: underline;
+    cursor: pointer;
   }
   .previous-button,
   .next-button {
@@ -251,6 +189,7 @@
     height: 180px;
     border-radius: 20px;
     border: 1px solid #bab2e7;
+    cursor: pointer;
   }
   .projects-info h4 {
     margin: 0;
@@ -286,8 +225,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .project-link a {
+  .project-link span {
     color: var(--body_projects_link);
+    text-decoration: underline;
+    cursor: pointer;
   }
   .previous-button,
   .next-button {

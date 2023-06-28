@@ -12,8 +12,68 @@
   --body_footer_blog: #e1e1ff;
 }
 @media (min-width: 319px) and (max-width: 480px) {
-  body {
-    background-color: lightsalmon;
+  .footer-container {
+    background-color: var(--body_footer_bg);
+    padding-top: 30px;
+    height: 25.563rem;
+    width: auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .footer p {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--body_footer_p);
+  }
+  .footer-link {
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: underline;
+    color: var(--body_footer_mail);
+  }
+  .right-hand {
+    color: gold;
+    font-size: 20px;
+    width: 26px;
+    height: 24px;
+  }
+  .my-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+  }
+  .footer-github {
+    width: 60px;
+    height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #00ab6b;
+    text-decoration: none;
+  }
+  .footer-linkedln {
+    width: 74px;
+    height: 27px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #0077b5;
   }
 }
 
