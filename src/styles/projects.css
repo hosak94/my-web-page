@@ -115,8 +115,8 @@
 
   .previous-button svg,
   .next-button svg {
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     fill: var(--body_projects_button);
   }
 }
