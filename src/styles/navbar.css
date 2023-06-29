@@ -10,7 +10,7 @@
   --body_nav_h4_bg: #3730a3;
   --body_nav_h4_color: white;
 }
-@media (min-width: 319px) and (max-width: 480px) {
+@media (min-width: 319px) and (max-width: 767px) {
   .container {
     background-color: var(--body_background);
   }
@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .container {
     background-color: var(--body_background);
     padding: 0 50px 0 50px;
@@ -119,7 +119,7 @@
     color: var(--body_nav_h4_bg);
   }
 }
-@media (min-width: 1201px) and (max-width: 1600px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .container {
     background-color: var(--body_background);
   }
@@ -177,7 +177,7 @@
     color: var(--body_nav_h4_bg);
   }
 }
-@media (min-width: 1601px) {
+@media (min-width: 1440px) and (max-width: 1919px) {
   .container {
     background-color: var(--body_background);
   }
@@ -222,6 +222,66 @@
     background-color: var(--body_nav_h4_bg);
     font-weight: 500;
     font-size: 1.125rem;
+    height: 3.25rem;
+    width: 8.188rem;
+    cursor: pointer;
+    border: 1px solid #3730a3;
+    border-radius: 10px;
+    padding: 0 1rem 0 1rem;
+  }
+  .contact h4:hover {
+    border-radius: 10px;
+    background-color: var(--body_nav_h4_color);
+    color: var(--body_nav_h4_bg);
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    background-color: var(--body_background);
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10.938rem 0 125px;
+  }
+  .navbar-container span {
+    font-family: "Inter";
+    font-style: normal;
+    background-color: var(--body_nav_span_bg);
+    color: var(--body_nav_span);
+    font-weight: 600;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 1rem;
+    line-height: 2.5rem;
+    text-align: center;
+    transform: rotate(30deg);
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.125rem;
+  }
+  .navbar h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.75rem;
+    color: #6b7280;
+    cursor: pointer;
+  }
+  .contact h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--body_nav_h4_color);
+    background-color: var(--body_nav_h4_bg);
+    font-weight: 500;
+    font-size: 24px;
     height: 3.25rem;
     width: 8.188rem;
     cursor: pointer;
