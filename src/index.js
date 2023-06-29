@@ -5,7 +5,7 @@ import App from "./App";
 import "./i18next";
 
 const loadingMarkUp = (
-  <div className="py-4 text-center">
+  <div>
     <h2>Loading..</h2>
   </div>
 );
