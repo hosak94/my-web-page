@@ -42,8 +42,10 @@ export default function Profile() {
           <div className="about-me">
             <h3>{t("about_me_tag")}</h3>
             <div className="about-me-scroll">
-              <p>{t("about_me_p1")}</p>
-              <p>{t("about_me_p2")}</p>
+              <div>
+                <p>{t("about_me_p1")}</p>
+                <p>{t("about_me_p2")}</p>
+              </div>
             </div>
           </div>
         </div>

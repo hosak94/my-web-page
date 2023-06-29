@@ -85,22 +85,26 @@
   }
   .skill-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 7.5rem;
-  }
-  .skill-list > div {
-    width: calc((100% - 2 * 7.5rem) / 3);
+    gap: 30px;
   }
 
   .skill-list h3 {
     color: var(--body_skill_h3);
     font-size: 30px;
+    width: 170px;
   }
   .skill-list p {
     color: var(--body_skill_p);
+    height: 100px;
+    overflow-x: scroll;
+    width: 200px;
+    display: none;
   }
   .skill-bottomline {
-    border: 1px solid #bab2e7;
+    border-bottom: 1px solid #bab2e7;
+    padding-top: 30px;
   }
 }
 

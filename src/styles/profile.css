@@ -161,6 +161,10 @@
     font-size: 30px;
     margin-top: 2.438rem;
   }
+  .about-me-scroll > div {
+    overflow-x: scroll;
+    height: 250px;
+  }
   .about-me p {
     color: var(--body_profile_p);
   }

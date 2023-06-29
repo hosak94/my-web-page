@@ -80,7 +80,7 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .settingsBar {
-    padding: 2rem 180px 0 0;
+    padding: 1rem 70px 0 0;
     background-color: var(--body_background);
   }
   .settings {
