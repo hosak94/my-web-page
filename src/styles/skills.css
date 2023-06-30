@@ -42,9 +42,8 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .skills {
-    padding: 7.5rem 10.938rem 0 7.813rem;
-
     background-color: var(--body_background);
+    padding: 50px 50px 0 50px;
   }
   .skills h2 {
     color: var(--body_skill_h2);
@@ -53,11 +52,10 @@
   }
   .skill-list {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 7.5rem;
-  }
-  .skill-list > div {
-    width: calc((100% - 2 * 7.5rem) / 3);
+    width: 400px;
+    gap: 30px;
   }
 
   .skill-list h3 {
@@ -66,6 +64,7 @@
   }
   .skill-list p {
     color: var(--body_skill_p);
+    display: none;
   }
   .skill-bottomline {
     border: 1px solid #bab2e7;
@@ -74,9 +73,8 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .skills {
-    padding: 7.5rem 10.938rem 0 7.813rem;
-
     background-color: var(--body_background);
+    padding: 110px 70px 0 70px;
   }
   .skills h2 {
     color: var(--body_skill_h2);
@@ -87,6 +85,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 600px;
     gap: 30px;
   }
 

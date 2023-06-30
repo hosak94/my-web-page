@@ -90,7 +90,7 @@
     font-size: 42px;
     font-weight: 600;
     color: var(--body_footer_p);
-    margin-left: 7.813rem;
+    padding-left: 50px;
   }
   .footer-link {
     display: flex;
@@ -102,7 +102,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin-left: 7.813rem;
+    padding-left: 50px;
     text-decoration: underline;
     color: var(--body_footer_mail);
   }
@@ -112,7 +112,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-right: 10.938rem;
+    margin-right: 50px;
     font-weight: 500;
   }
   .blog {
@@ -160,7 +160,7 @@
     font-size: 42px;
     font-weight: 600;
     color: var(--body_footer_p);
-    margin-left: 7.813rem;
+    padding-left: 70px;
   }
   .footer-link {
     display: flex;
@@ -172,7 +172,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin-left: 7.813rem;
+    padding-left: 70px;
     text-decoration: underline;
     color: var(--body_footer_mail);
   }
@@ -182,7 +182,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-right: 10.938rem;
+    margin-right: 70px;
     font-weight: 500;
   }
   .blog {

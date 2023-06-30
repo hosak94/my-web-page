@@ -126,10 +126,9 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .projects-container {
     background-color: var(--body_background);
-    padding-top: 0.1px;
+    padding: 0.1px 50px 0 50px;
   }
   .projects-container h2 {
-    padding: 0 10.938rem 0 7.813rem;
     font-size: 48px;
     font-weight: bold;
     line-height: 48px;
@@ -138,15 +137,14 @@
   .project-border {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
   .projects {
     display: flex;
     flex-direction: row;
+    overflow-y: scroll;
     gap: 1.5rem;
   }
   .projects-info {
@@ -175,6 +173,7 @@
     margin: 0;
     padding: 0;
     font-size: 30px;
+    height: 70px;
     color: var(--body_projects_h4);
   }
   .projects-info p {
@@ -185,8 +184,9 @@
   .project-features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
     grid-gap: 6px;
-    grid-auto-flow: dense;
+    height: 70px;
   }
   .project-features span {
     display: flex;
@@ -231,10 +231,10 @@
     padding-top: 0.1px;
   }
   .projects-container h2 {
-    padding: 0 10.938rem 0 7.813rem;
     font-size: 48px;
     font-weight: bold;
     color: var(--body_projects_h2);
+    padding: 0.1px 70px 0 70px;
   }
 
   .project-border {

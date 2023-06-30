@@ -138,10 +138,9 @@
   }
 
   .catchword h2 {
-    width: 300px;
     color: var(--body_header_h1);
     margin: 0;
-    font-size: 32px;
+    font-size: 42px;
   }
   .info {
     width: 350px;
@@ -151,7 +150,7 @@
   }
 
   .avatar img {
-    width: 250px;
+    width: 200px;
     height: 170px;
     border-radius: 18px;
     box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
@@ -247,10 +246,11 @@
     color: var(--body_header_h1);
     margin: 0;
     font-size: 54px;
+    width: 500px;
   }
   .info {
     margin: 0;
-    text-align: justify;
+    width: 400px;
     color: var(--body_header_info_p);
   }
 
@@ -260,7 +260,7 @@
     border-radius: 18px;
     box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
       0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-    margin-top: 5rem;
+    margin: 50px;
   }
 
   .icons {
@@ -354,14 +354,14 @@
 
   .catchword h2 {
     color: var(--body_header_h1);
-
+    width: 615px;
     margin: 0;
     font-size: 4.5rem;
     line-height: 4.5rem;
   }
   .info {
     margin: 0;
-    text-align: justify;
+    width: 615px;
     color: var(--body_header_info_p);
   }
 
