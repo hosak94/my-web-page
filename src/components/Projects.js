@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import { projectData } from "../data/projects.data";
 import "../styles/projects.css";
@@ -11,15 +11,8 @@ export default function Projects() {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
   const { t } = useTranslation();
 
-  const handleOnClick = (projectUrl) => {
-    axios
-      .get(projectUrl)
-      .then((response) => {
-        window.location.href = projectUrl;
-      })
-      .catch((error) => {
-        console.error("Error occurred while redirecting:", error);
-      });
+  const handleOnClick = (url) => {
+    window.open(url, "_blank");
   };
 
   const handlePreviousProject = () => {
@@ -65,12 +58,8 @@ export default function Projects() {
                 ))}
               </div>
               <div className="project-link">
-                <span onClick={() => handleOnClick(project.projectUrl)}>
-                  Github
-                </span>
-                <span onClick={() => handleOnClick(project.projectUrl)}>
-                  View Site
-                </span>
+                <Link to={project.gitHub}>Github</Link>
+                <Link to={project.projectUrl}>View Site</Link>
               </div>
             </div>
           ))}

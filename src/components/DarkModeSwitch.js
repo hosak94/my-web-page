@@ -1,24 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/darkmode.css";
 
 export const DarkModeSwitch = ({ onThemeChange }) => {
+  const [selectedTheme, setSelectedTheme] = useState(
+    localStorage.getItem("selectedTheme") || "dark"
+  );
+
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
     localStorage.setItem("selectedTheme", "dark");
     onThemeChange("dark");
   };
+
   const setLightMode = () => {
     document.querySelector("body").setAttribute("data-theme", "light");
     localStorage.setItem("selectedTheme", "light");
     onThemeChange("light");
   };
-  const selectedTheme = localStorage.getItem("selectedTheme");
-  if (selectedTheme === "dark") {
-    setDarkMode();
-  }
+
+  useEffect(() => {
+    if (selectedTheme === "dark") {
+      setDarkMode();
+    } else {
+      setLightMode();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedTheme]);
+
   const toggleTheme = (e) => {
-    if (e.target.checked) setDarkMode();
-    else setLightMode();
+    if (e.target.checked) {
+      setSelectedTheme("dark");
+    } else {
+      setSelectedTheme("light");
+    }
   };
 
   return (
@@ -32,15 +46,6 @@ export const DarkModeSwitch = ({ onThemeChange }) => {
         <div className="slider"></div>
         <div className="bg"></div>
       </label>
-      {/* <input
-        className="dark_mode_input"
-        type="checkbox"
-        id="darkmode-toggle"
-        onChange={toggleTheme}
-        defaultChecked={selectedTheme === "dark"}
-      />
-      <label className="dark_mode_label" htmlFor="darkmode-toggle"></label>
-      <label className="dark_mode_label_hilal"></label> */}
     </div>
   );
 };
