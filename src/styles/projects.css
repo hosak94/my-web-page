@@ -103,7 +103,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .project-link span {
+  .project-link > a {
     color: var(--body_projects_link);
     text-decoration: underline;
     cursor: pointer;
@@ -205,7 +205,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .project-link span {
+  .project-link > a {
     color: var(--body_projects_link);
     text-decoration: underline;
     cursor: pointer;
@@ -307,7 +307,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .project-link span {
+  .project-link > a {
     color: var(--body_projects_link);
     text-decoration: underline;
     cursor: pointer;
@@ -410,7 +410,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .project-link span {
+  .project-link > a {
     color: var(--body_projects_link);
     text-decoration: underline;
     cursor: pointer;
@@ -515,7 +515,6 @@
     white-space: nowrap;
     padding: 0.3rem;
     background-color: var(--body_projects_span_bg);
-    font-size: 24px;
   }
 
   .project-link {
@@ -523,7 +522,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .project-link span {
+  .project-link > a {
     color: var(--body_projects_link);
     text-decoration: underline;
     cursor: pointer;
