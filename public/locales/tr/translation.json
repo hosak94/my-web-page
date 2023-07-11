@@ -27,5 +27,6 @@
   "Grateful_Diary_info": "Minnet Günlüğü'ne hoş geldiniz, günlük minnettarlık pratiğine katılmanızı teşvik eden dönüştürücü bir web uygulaması. Sürekli dikkat dağıtıcı ve stres faktörleriyle dolu bir dünyada, Minnet Günlüğü size yansıma, takdir ve kişisel gelişim için bir sığınak sunar.",
   "Movie_app": "Film Uygulaması",
   "Movie_app_info": "Film dünyasına hızlı bir yolculuğa çıkın! Filmleri listeliyor, beğenilerinize göre puanlayabiliyor, kendi yorumlarınızı yazabiliyor ve favori listesine ekleyebiliyorsunuz. Heyecan verici özellikleriyle size sinematik deneyimde yeni bir soluk getiren bu uygulama, film tutkunları için vazgeçilmez bir yol gösterici haline geliyor.",
-  "slogan": "Hadi bir sonraki projenizde beraber çalışalım."
+  "slogan": "Hadi bir sonraki projenizde beraber çalışalım.",
+  "Recipe_search_app_description": "Bu projede, Edamam Recipe Search API'nın gücünü ve Tailwind CSS'nin esnekliğini bir araya getirerek, kullanıcıların geniş bir yelpazede lezzetli tarifler keşfetmelerini sağladım. Bu proje, API entegrasyonu yapabilme, görsel olarak çekici arayüzler tasarlama ve sorunsuz bir kullanıcı deneyimi sunma becerilerimi sergiliyor. bunu ingilizceye çevir"
 }

@@ -1,5 +1,13 @@
 export const projectData = [
   {
+    projectName: "Flavors of the Feast",
+    projectImg: "Recipe-app.png",
+    projectDescription: "Recipe_search_app_description",
+    projectSkill: ["react", "Javascript", "TailwindCss", "EdamamApi"],
+    projectUrl: "https://recipe-app-edamam-api.vercel.app/",
+    gitHub: "https://github.com/hosak94/recipe-app-edamam-api",
+  },
+  {
     projectName: "Calculator ",
     projectImg: "Calculator.png",
     projectDescription: "Calculator_info",

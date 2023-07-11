@@ -27,5 +27,6 @@
   "Grateful_Diary_info": "Welcome to Grateful Diary, a transformative web application that encourages you to embrace gratitude as a daily practice. In a world filled with constant distractions and stressors, Grateful Diary provides a sanctuary for reflection, appreciation, and personal growth.",
   "Movie_app": "Movie App",
   "Movie_app_info": "Embark on a fast journey into the world of cinema! You can list movies, rate them according to your preferences, write your own reviews, and add them to your favorites list. With its thrilling features, this application brings a fresh breeze to your cinematic experience, making it an indispensable guide for film enthusiasts.",
-  "slogan": "Let's work together on your next product."
+  "slogan": "Let's work together on your next product.",
+  "Recipe_search_app_description": "In this project, I combined the power of the Edamam Recipe Search API and the flexibility of Tailwind CSS to enable users to discover a wide range of delicious recipes. This project showcases my skills in API integration, designing visually appealing interfaces, and delivering a seamless user experience."
 }
