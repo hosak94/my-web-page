@@ -52,7 +52,7 @@ export default function Header() {
           </div>
         </div>
         <div className="avatar">
-          <img src="/project-photo/Profile.jpg" alt="" />
+          <img src="/project-photo/Profile.PNG" alt="" />
         </div>
       </div>
     </div>
