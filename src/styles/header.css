@@ -61,8 +61,8 @@
   }
 
   .avatar img {
-    width: 120px;
-    height: 120px;
+    width: auto;
+    height: 200px;
     border-radius: 18px;
     box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
       0px 18px 88px -4px rgba(24, 39, 75, 0.14);
