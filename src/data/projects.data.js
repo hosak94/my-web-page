@@ -8,6 +8,14 @@ export const projectData = [
     gitHub: "https://github.com/hosak94/recipe-app-edamam-api",
   },
   {
+    projectName: "Guess My Number",
+    projectImg: "guessMyNumber.png",
+    projectDescription: "Guess_Number_description",
+    projectSkill: ["HTML", "CSS", "JavaScript"],
+    projectUrl: "https://guess-my-number-theta-neon.vercel.app/",
+    gitHub: "https://github.com/hosak94/guessMyNumber",
+  },
+  {
     projectName: "Calculator ",
     projectImg: "Calculator.png",
     projectDescription: "Calculator_info",

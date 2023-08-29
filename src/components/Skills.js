@@ -2,7 +2,7 @@ import React from "react";
 import { Element } from "react-scroll";
 import "../styles/skills.css";
 import { useTranslation } from "react-i18next";
-import { FaHtml5, FaCode, FaTools, FaToolbox } from "react-icons/fa";
+import { FaHtml5, FaCode, FaToolbox } from "react-icons/fa";
 
 export default function Skills() {
   const { t } = useTranslation();
